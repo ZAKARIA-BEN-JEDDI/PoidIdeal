@@ -16,9 +16,9 @@ function App() {
     }else{
       let poid = 0
       if(genre==="homme"){
-        poid = taille*(2)
+        poid = 50+0.91*(taille-152.4)
       }else{
-        poid = taille*(1.5)
+        poid = 45.5+0.91*(taille-152.4)
       }
       setresult(`Le poids est ${poid} KG`)
       console.log(`Le poids est ${poid} KG`)
